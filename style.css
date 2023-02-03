@@ -22,7 +22,7 @@
   --bg-button-hover: #005a75;
 
   --bg-error: #f03e3e;
-  --tt-error: #f03e3e;
+  --tt-error: #ffffff;
 }
 
 body {
@@ -116,6 +116,8 @@ form button:hover {
   background: var(--bg-button-hover);
 }
 
+/* Modal */
+
 .modal-wrapper.open {
   opacity: 1;
   visibility: visible;
@@ -147,4 +149,27 @@ form button:hover {
 
 .modal button:hover {
   transform: scale(1.1);
+}
+
+/* Alert */
+.alert-error.open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.alert-error {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: var(--bg-error);
+  text-align: center;
+  color: var(--tt-error);
+  font-weight: bold;
+  padding: 0.8rem 0;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: transform 0.5s;
 }
