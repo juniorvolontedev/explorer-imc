@@ -8,17 +8,19 @@
   font-size: 62.5%;
 
   --tt-heading: #0c3440;
+
   --tt-label: #00453a;
+
   --tt-placeholder: #49505780;
-  --tt-button: #ffffff;
   --tt-input: #212529;
-  --tt-error: #f03e3e;
-
   --ot-input: #02799d;
-
   --bd-input: #4950574d;
+
+  --tt-button: #ffffff;
   --bg-button: #02799d;
+
   --bg-error: #f03e3e;
+  --tt-error: #f03e3e;
 }
 
 body {
